@@ -45,25 +45,20 @@ Set up a Redis cache container for the WordPress website to improve performance 
 
 Implement an Adminer container, providing a web-based database management tool for easy interaction with the MariaDB database.
 
----
-
-Note: The bonus part will only be evaluated if the mandatory part is perfectly implemented and functional.
-Certainly! I'll add instructions for filling in these credential files to the project description. Here's an updated version with these instructions:
-
 ## How to Use
 
 Before running the project, you need to set up your credentials. Follow these steps:
 
-1. Create and fill in the following files in the `secrets` directory:
+### 1. Create and fill in the following files in the `secrets` directory:
 
-### db_creds.txt
+#### db_creds.txt
 Fill in the database credentials:
 
 DB_NAME=your_database_name
 DB_USER=your_database_user
 DB_PASS=your_database_password
 
-### wp_creds.txt
+#### wp_creds.txt
 Fill in the WordPress credentials and settings:
 
 URL=your_wordpress_url
@@ -78,9 +73,9 @@ USER1_PASS=your_user1_password
 USER1_ROLE=your_user1_role
 USER1_MAIL=your_user1_email
 
-### db_root_pass.txt
+#### db_root_pass.txt
 This file should contain only the root password for your database. Create the file and add your desired root password as a single string:
 
 your_root_password
 
-2. After filling in these credentials, you can proceed with building and running your Docker containers using the provided Makefile.
+### 2. After filling in these credentials, you can proceed with building and running your Docker containers using the provided Makefile.
