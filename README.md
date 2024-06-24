@@ -84,3 +84,6 @@ your_root_password
 `make re` - stops the project, rebuilds it, and then runs it again  
 `make clean` - deletes volumes and images related to the project, also deletes volumes folders (requires sudo password)  
 `make fclean` - deletes volumes and images related to the project, deletes volumes folders (requires sudo password), and clears Docker system cache (unused images, networks, volumes, etc.)
+
+- Wordpress website will be available at `https://localhost`
+- Adminer will be available at `http://localhost:8080`
