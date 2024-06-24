@@ -28,7 +28,7 @@ down:
 	@docker-compose -f $(COMPOSE_FILE) down
 	@echo $(GREEN) "\n\tStop ${name}: done\n" ${END}
 
-re: clean all
+re: down all
 
 clean:
 	@echo $(YELLOW) "\n\tCleaning up ${name} objects...\n" ${END}
