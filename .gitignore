@@ -1,0 +1,25 @@
+# Ignore macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Ignore any logs that might be generated
+*.log
+
+# Ignore any temporary files that might be created
+*.tmp
+
+# Ignore any backup files
+*~
+*.bak
+
+# Ignore any IDE or editor specific files
+.vscode/
+.idea/
+
+# Ignore any potential node_modules (if used for frontend)
+node_modules/
+
+# Ignore any potential build artifacts
+build/
+dist/

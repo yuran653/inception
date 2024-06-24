@@ -18,7 +18,7 @@ secrets/
 
 # Other service directories (each service should only include its own files)
 requirements/*/
-!requirements/nginx/
+!requirements/adminer/
 
 # Docker files (to prevent recursive copies)
 Dockerfile

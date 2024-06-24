@@ -1,2 +1,25 @@
+# Version control
 .git
-.env
+.gitignore
+
+# OS generated files
+.DS_Store
+
+# Editor directories
+.vscode
+.idea
+
+# Project-specific files not needed in Docker images
+Makefile
+README.md
+
+# Secrets directory (should not be included in Docker images)
+secrets/
+
+# Other service directories (each service should only include its own files)
+requirements/*/
+!requirements/mariadb/
+
+# Docker files (to prevent recursive copies)
+Dockerfile
+.dockerignore
