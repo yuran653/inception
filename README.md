@@ -35,8 +35,6 @@ Inception is a system administration project that focuses on using Docker to set
 
 ## Bonus Part
 
-While the PDF mentions several bonus options, we'll focus on Redis and Adminer as requested:
-
 ### Redis Cache
 
 Set up a Redis cache container for the WordPress website to improve performance and manage caching efficiently.
@@ -85,4 +83,4 @@ your_root_password
 `make down` -  stops the project  
 `make re` - stops the project, rebuilds it, and then runs it again  
 `make clean` - deletes volumes and images related to the project, also deletes volumes folders (requires sudo password)  
-`make fclean' - deletes volumes and images related to the project, deletes volumes folders (requires sudo password), and clears Docker system cache (unused images, networks, volumes, etc.)
+`make fclean` - deletes volumes and images related to the project, deletes volumes folders (requires sudo password), and clears Docker system cache (unused images, networks, volumes, etc.)
