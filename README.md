@@ -1,6 +1,6 @@
-# Inception
+# Inception - École 42 Project
 
-## Project Description
+## Description
 
 Inception is a system administration project that focuses on using Docker to set up a small infrastructure composed of different services. The goal is to virtualize several Docker images in a personal virtual machine.
 
