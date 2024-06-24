@@ -54,28 +54,35 @@ Before running the project, you need to set up your credentials. Follow these st
 #### db_creds.txt
 Fill in the database credentials:
 
-DB_NAME=your_database_name
-DB_USER=your_database_user
-DB_PASS=your_database_password
+DB_NAME=your_database_name  
+DB_USER=your_database_user  
+DB_PASS=your_database_password  
 
 #### wp_creds.txt
 Fill in the WordPress credentials and settings:
 
-URL=your_wordpress_url
+URL=your_wordpress_url  
 
-TITLE=your_site_title
-ADMIN_LOGIN=your_admin_username
-ADMIN_PASS=your_admin_password
-ADMIN_MAIL=your_admin_email
+TITLE=your_site_title  
+ADMIN_LOGIN=your_admin_username  
+ADMIN_PASS=your_admin_password  
+ADMIN_MAIL=your_admin_email  
 
-USER1_LOGIN=your_user1_username
-USER1_PASS=your_user1_password
-USER1_ROLE=your_user1_role
-USER1_MAIL=your_user1_email
+USER1_LOGIN=your_user1_username  
+USER1_PASS=your_user1_password  
+USER1_ROLE=your_user1_role  
+USER1_MAIL=your_user1_email  
 
 #### db_root_pass.txt
 This file should contain only the root password for your database. Create the file and add your desired root password as a single string:
 
-your_root_password
+your_root_password  
 
-### 2. After filling in these credentials, you can proceed with building and running your Docker containers using the provided Makefile.
+### 2. After filling in these credentials, you can proceed with building and running your Docker containers using the provided Makefile:
+
+`make` or `make all` - builds and runs the project  
+`make up` - runs the project (without rebuilding)  
+`make down` -  stops the project  
+`make re` - stops the project, rebuilds it, and then runs it again  
+`make clean` - deletes volumes and images related to the project, also deletes volumes folders (requires sudo password)  
+`make fclean' - deletes volumes and images related to the project, deletes volumes folders (requires sudo password), and clears Docker system cache (unused images, networks, volumes, etc.)
